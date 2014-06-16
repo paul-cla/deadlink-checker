@@ -1,7 +1,7 @@
 var request = require('request');
 var cheerio = require('cheerio');
 
-var prefix = process.env.HOSTURL || 'http://web.test.laterooms.com';
+var prefix = process.env.HOST || process.env.HOSTNAME || 'http://web.test.laterooms.com';
 
 request('http://www.laterooms.com', function(error, response, body) {
 	if(!error && response.statusCode == 200) {
