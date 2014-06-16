@@ -1,0 +1,25 @@
+{
+  "name": "linkChecker",
+  "version": "0.1.0",
+  "description": "dead link checker",
+  "main": "checker.js",
+  "dependencies": {
+    "request": "~2.36.0"
+  },
+  "devDependencies": {
+    "request": "~2.36.0",
+    "cheerio": "~0.17.0"
+  },
+  "scripts": {
+    "test": "none"
+  },
+  "repository": {
+    "type": "git",
+    "url": "none"
+  },
+  "keywords": [
+    "deadlinks"
+  ],
+  "author": "Farzad Qasim",
+  "license": "ISC"
+}
