@@ -3,7 +3,7 @@ var cheerio = require('cheerio');
 
 var prefix = process.env.HOST || process.env.HOSTNAME || 'http://web.test.laterooms.com';
 
-request('http://www.laterooms.com', function(error, response, body) {
+request('http://web.test.laterooms.com', function(error, response, body) {
 	if(!error && response.statusCode == 200) {
 		traverseLinks(body);
 	} else {
@@ -41,7 +41,7 @@ function pingURL(url) {
 		if(!error && response.statusCode == 200) {
 			console.log('pass ==> ' + url);
 		} else {
-			console.log('fail ==> ' + error + ' - ' + url);
+			console.log('fail ==> ' + error + ' - ' + response.statusCode + ' - ' + url);
 			process.exit(1);
 		}
 	});
