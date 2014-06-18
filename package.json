@@ -1,8 +1,8 @@
 {
-  "name": "linkChecker",
+  "name": "deadlink-checker",
   "version": "0.1.0",
   "description": "dead link checker",
-  "main": "checker.js",
+  "main": "linkChecker.js",
   "dependencies": {
     "request": "~2.36.0"
   },
